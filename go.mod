@@ -1,4 +1,4 @@
-module git.asxalex.pw/asxalex/boltviewer
+module github.com/asxalex123/boltviewer
 
 go 1.20
 
