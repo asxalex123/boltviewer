@@ -5,7 +5,7 @@ boltviewer is a neo-vim plugin for viewing boltdb files.
 the plugin uses noevim's go-client for accessing boltdb and interacting with neovim at the same time. So, we need to install the golang executable with
 
 ```shell
-go install github.com/asxalex123/boltviewer
+go install github.com/asxalex123/boltviewer@main
 ```
 
 This will install the go-plugin in your "$GOPATH/bin", make sure the directory is in `$PATH`
@@ -15,7 +15,7 @@ Then install the vim plugin with neovim's lazy.nvim:
 ```lua
 -- ~/.config/nvim/lua/plugins/boltviewer.lua
 return {
-    {asxalex123/boltviewer.nvim},
+    {"asxalex123/boltviewer.nvim"},
 }
 ```
 
