@@ -33,11 +33,11 @@ bucket-name2
     key4 => value4
 ```
 
-the `bc` key binding is interpreted as `bolt create entry(or bucket)`, while `bd` stands for `bolt delete entry (or bucket)`. A line starts with white space is treated as an entry(which should in the form of `key => value`), and other line is treated as a bucket name.
+The `<leader>bib` stands for `bolt insert bucket`, while `<leader>bie` stands for `bolt insert entry`.
 
-if we hit `bc` with cursor on a bucket line, a bucket will be created in boltdb, if cursor on an entry line, an entry will be created.
+`<leader>bm` represents `bolt modify`, this modifies the entry under the current cursor.
 
-if we hit `bd` with cursor on a bucket line, the bucket will be dropped if the bucket has no entry, otherwise, the action will fail.
+if we hit `<leader>bd` with cursor on a bucket line, the bucket will be dropped if the bucket has no entry, otherwise, the action will fail.
 
-if `bd` is hit with cursor on an entry line, the entry will be deleted from the bucket.
+if `<leader>bd` is hit with cursor on an entry line(a line starts with `\t` or space, and the line has the format of `key => value`), the entry will be deleted from the bucket.
 
